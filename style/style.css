@@ -1,0 +1,361 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/** css reset stop **/
+
+/** css home **/
+/** header **/
+
+.header {
+  background-color: #ff1f57;
+  background-size: 100%;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.li-head {
+  display: flex;
+  padding: 5px;
+  padding-top: 10px;
+  margin: 10px;
+}
+
+ul li a {
+  font-family: "poppins", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffac42;
+  font-weight: 20px;
+}
+
+.li-head:hover {
+  background-color: #1a1a1a;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+/** header stop **/
+
+/** content **/
+.main-content {
+  background-color: #1a1a1a;
+  height: 100vh;
+}
+
+.main-content h1 {
+  padding-top: 10px;
+  padding-left: 20px;
+  font-family: "poppins", sans-serif;
+  font-size: 35px;
+  color: #ffac42;
+}
+
+p {
+  font-family: "poppins", sans-serif;
+  font-size: 15px;
+  color: #ffac42;
+  line-height: 2;
+  padding-left: 20px;
+}
+
+.dec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dec-main {
+  background-color: #ff1f57;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.dec-main h2 {
+  padding-top: 10px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  font-family: "poppins", sans-serif;
+  font-size: 15px;
+  color: #ffac42;
+  font-weight: 30px;
+}
+
+.dec-main img {
+  display: block;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.dec-main audio {
+  display: block;
+  margin: auto;
+  padding-top: 10px;
+}
+
+/** content stop **/
+
+/** footer **/
+.footer {
+  background-color: #ff1f57;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.copy-foot {
+  color: #1a1a1a;
+  font-size: 13px;
+  font-weight: 50px;
+  font-family: "poppins", sans-serif;
+}
+
+/** css home stop **/
+
+/** css about **/
+
+.main-about {
+  width: 700px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.h1-about-main {
+  padding-top: 10px;
+  padding-left: 20px;
+  font-family: "poppins", sans-serif;
+  font-size: 35px;
+  color: #ffac42;
+}
+
+.img-content {
+  aspect-ratio: 2/2;
+  object-fit: cover;
+  width: 100px;
+  border-radius: 20px;
+  margin-left: 20px;
+  filter: grayscale(50%);
+  float: left;
+  margin-right: 10px;
+}
+
+.p-about {
+  padding-left: 20px;
+  font-size: 13px;
+}
+
+.about-me {
+  width: 400px;
+  float: right;
+  border: 5px #ff1f57 solid;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.about-me h2 {
+  font-family: "poppins", sans-serif;
+  font-size: 20px;
+  color: #ffac42;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  font-weight: 20px;
+}
+
+.p-me {
+  font-size: 10px;
+}
+
+/** css about stop **/
+
+/** css about mobile **/
+@media screen and (max-width: 500px) {
+  .h1-about-main {
+    font-size: 9px;
+  }
+
+  .p-about {
+    font-size: 2vw;
+  }
+
+  .main-about {
+    width: 100%;
+    float: left;
+  }
+
+  .about-me {
+    margin-left: 20px;
+    float: right;
+    width: 100%;
+    border: none;
+  }
+
+  .img-content {
+    width: 50px;
+  }
+
+  .p-me {
+    font-size: 2vw;
+  }
+
+  .main-content {
+    height: 110vh;
+  }
+
+  .about-me h2 {
+    margin-left: 10px;
+  }
+}
+
+/**css about mobile stop **/
+/** css clear fix **/
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
+
+/** css clearfix stop **/
